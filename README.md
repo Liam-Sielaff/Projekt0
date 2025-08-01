@@ -1,36 +1,36 @@
 # Pi-Game
 
-Ein kleines Konsolenspiel, bei dem du die Nachkommastellen von π (Pi) erraten sollst.
+A small console game where you guess the decimal digits of π (Pi).
 
-## Funktionsweise
+## How it works
 
-- Das Programm berechnet Pi mit hoher Genauigkeit.
-- Es fragt dich nach einer zufällig gewählten Nachkommastelle von Pi.
-- Du gibst die Ziffer ein, die an dieser Stelle steht.
-- Mit `q` kannst du das Spiel jederzeit beenden.
+- The program calculates Pi with high precision.
+- It asks you for a randomly chosen decimal digit of Pi.
+- You enter the digit at that position.
+- Enter `q` to quit the game at any time.
 
-## Starten
+## How to start
 
-Öffne ein Terminal und führe das Spiel aus:
+Open a terminal and run:
 
 ```bash
 python3 pi-game.py
 ```
 
-## Beispiel
+## Example
 
 ```
-Geben Sie die 17. Nachkommastelle von pi ein (oder 'q' zum Beenden): 9
-Richtig!
-Geben Sie die 42. Nachkommastelle von pi ein (oder 'q' zum Beenden): q
-Spiel beendet.
+Enter the 17th decimal digit of pi (or 'q' to quit): 9
+Correct!
+Enter the 42nd decimal digit of pi (or 'q' to quit): q
+Game ended.
 ```
 
-## Voraussetzungen
+## Requirements
 
 - Python 3
-- Keine weiteren Abhängigkeiten
+- No additional dependencies
 
-## Lizenz
+## License
 
-Dieses Projekt steht unter
+This project is licensed
