@@ -30,18 +30,25 @@ def get_pi_decimal(number):
         return None
 
 
-def main():
+def play_game():
     while True:
         random_number = get_random_number()
         if random_number is None:
             continue
 
-        user_input = input(f"Geben Sie die {random_number}. Nachkommastelle von pi ein: ")
+        user_input = input(
+            f"Geben Sie die {random_number}. Nachkommastelle von pi ein (oder 'q' zum Beenden): "
+        )
+
+        # Erst auf 'q' prüfen, dann erst in int umwandeln!
+        if user_input.lower() == 'q':
+            print("Spiel beendet.")
+            break
 
         try:
             user_input = int(user_input)
         except ValueError:
-            print("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl ein.")
+            print("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl ein oder 'q' zum Beenden.")
             continue
 
         correct_digit = get_pi_decimal(random_number)
@@ -53,4 +60,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    play_game()
+
